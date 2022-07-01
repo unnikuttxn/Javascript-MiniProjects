@@ -28,11 +28,12 @@ function showTime(){
 	var m=date.getMinutes();
 	var s=date.getSeconds();
 	var session;
-
-	if(h>=12){
+	if(h>13){
+		h=h-12
 		session="PM"
 	}
-	if(h<12){
+	
+	else{
 		session="AM"
 	}
 	if(h<10){
